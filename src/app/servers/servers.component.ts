@@ -12,8 +12,8 @@ export class ServersComponent implements OnInit {
   serverName = 'test';
   userName = '';
   serverCreated = false;
-  servers = ['testserver','testserver 2'];
-log=[];
+  servers = ['testserver', 'testserver 2'];
+  log = [];
   constructor() {
     setTimeout(() => {
       this.allowNewServer = true;
@@ -23,8 +23,8 @@ log=[];
   ngOnInit() {
   }
 
-addLog(){
-  this.log.push(Date.now())
+addLog() {
+  this.log.push(Date.now());
 }
 
   onCreateServer() {
